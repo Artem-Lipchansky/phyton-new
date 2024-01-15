@@ -9,9 +9,9 @@ class Player:
         self.angle = player_angle
 
 
-   @property
-   def pos(self):
-    return (self.x, self.y)  
+    @property
+    def pos(self):
+       return (self.x, self.y)  
 
 
     def movement(self):
