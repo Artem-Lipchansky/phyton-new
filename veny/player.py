@@ -1,6 +1,7 @@
 from settings import*
 
 import pygame
+import math
 
 
 class Player:
@@ -15,6 +16,7 @@ class Player:
 
 
     def movement(self):
+        sin_a = math.sin()
         keys = pygame.key.get_pressed()
         if keys[pygame.K_w]:
             self.y -= player_speed
