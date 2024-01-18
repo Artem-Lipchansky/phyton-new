@@ -21,7 +21,7 @@ while True:
     pygame.draw.line(sc, GREEN, player.pos, (player.x + WIDTH * math.cos(player.angle),
                                              player.y + WIDTH * math. sin(player.angle)))
     for x,y in world_map:
-        pygame.draw.rect(sc, DARKGRAY, (x, y, TITLE, TITLE), 2)
+        pygame.draw.rect(sc, DARKGRAY, (x, y, TILE, TILE), 2)
 
     pygame.display.flip()
     clock.tick(FPS)

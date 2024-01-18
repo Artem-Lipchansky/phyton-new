@@ -21,11 +21,11 @@ class Player:
         keys = pygame.key.get_pressed()
         if keys[pygame.K_w]:
             self.x += player_speed * cos_a
-            self.y +- -player_speed * sin_a
+            self.y +- player_speed * sin_a
             print('W')
         if keys[pygame.K_s]:
             self.x += -player_speed * cos_a 
-            self.y += player_speed * sin_a
+            self.y += -player_speed * sin_a
             print('S')
         if keys[pygame.K_a]:
             self.x += player_speed * sin_a
